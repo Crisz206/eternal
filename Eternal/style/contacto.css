@@ -1,0 +1,103 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* Fondo claro */
+    color: #333;
+}
+
+/* Contenedor del Formulario */
+.container {
+    width: 100%;
+    max-width: 600px; /* Máximo tamaño */
+    background-color: #fff;
+    padding: 40px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out; /* Animación suave */
+}
+
+.container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Estilos del Título */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Estilos de los Campos de Entrada */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease; /* Efecto de transición al enfocar */
+    box-sizing: border-box;
+}
+
+/* Estilo cuando los campos son enfocados */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #4CAF50; /* Cambio de color cuando está enfocado */
+    outline: none;
+}
+
+/* Estilos del Área de Texto */
+textarea {
+    resize: vertical; /* Permite que el campo de texto se redimensione verticalmente */
+    min-height: 120px; /* Altura mínima del área de texto */
+}
+
+/* Estilos del Botón */
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Efecto de ampliación al hacer hover */
+}
+
+button:active {
+    background-color: #388e3c; /* Fondo más oscuro al hacer clic */
+}
+
+/* Estilos de los Mensajes de Confirmación o Error */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.error {
+    color: #d9534f;
+}
